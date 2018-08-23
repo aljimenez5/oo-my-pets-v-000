@@ -58,9 +58,9 @@ class Owner
   
   def sell_pets
     if self.reset_all
-    @pets.each do |pets_key, pets_value| 
-      pets_value.collect {|pet| pet.instance_variable_set(:@mood, "nervous")}
-      @pets.reset_all
+      @pets.each do |pets_key, pets_value| 
+        pets_value.collect {|pet| pet.instance_variable_set(:@mood, "nervous")}
+      end
     end
   end
     
