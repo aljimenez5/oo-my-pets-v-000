@@ -57,8 +57,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each do |pet_key, pet_arr|
-      pet_arr.each {|animal| animal.name = "nervous"}
+    @pets.each {|pet_key, pet_arr| pet_arr.mood = "nervous"}
       binding.pry
       
     end
