@@ -57,7 +57,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each {|pet_key, pet_value| pet_value}
+    @pets.each {|pet_key, pet_value| pet_value.}
     binding.pry
       
     
