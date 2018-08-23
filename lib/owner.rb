@@ -57,7 +57,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each {|pet_key, pet_value| pet_value.instance}
+    @pets.each {|pet_key, pet_value| pet_value.instance_variable_set(@mood, "nervous")}
     binding.pry
       
     
